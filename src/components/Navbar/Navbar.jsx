@@ -20,7 +20,7 @@ const Navbar = () => {
           <a href="#about" className="flex text-dark px-5 h-full items-center justify-center hover:bg-secondary/80 transition-all duration-150 dark:text-white dark:hover:text-secondary/80">
             About Us
           </a>
-          <a href="postcards" className="flex text-dark px-5 h-full items-center justify-center hover:bg-secondary/80 transition-all duration-150 dark:text-white dark:hover:text-secondary/80">
+          <a href="#postcards" className="flex text-dark px-5 h-full items-center justify-center hover:bg-secondary/80 transition-all duration-150 dark:text-white dark:hover:text-secondary/80">
             Postcards
           </a>
         </div>
