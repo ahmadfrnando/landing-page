@@ -2,7 +2,7 @@
   "name": "neighborgood",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://ahmadfrnando.github.io/landingpage/",
+  "homepage": "https://ahmadfrnando.github.io/landing-page/",
   "type": "module",
   "scripts": {
     "dev": "vite",
