@@ -1,16 +1,17 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 import Image from '../../assets/about2.jpg';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const About = () => {
   return (
     <div id="info" className="bg-white dark:bg-gray-900 max-w-screen">
       <div className="container flex flex-col gap-10 items-center py-32">
         <div className="flex md:flex-row flex-col gap-10 md:px-20 items-center justify-center">
-          <img src={Image} alt="about" className="md:flex hidden max-w-[300px] h-auto drop-shadow-lg" />
+          <LazyLoadImage src={Image} alt="about" effect='blur' placeholderSrc={Image} className="md:flex hidden max-w-[300px] h-auto drop-shadow-lg" />
           <div className="flex flex-col gap-10 md:px-0 px-6 md:gap-6 font-semibold text-justify md:text-center text-xl items-center justify-center ">
             <h1 className="text-3xl md:text-4xl text-center md:mt-0 font-bold text-tertiary/80">A Way For Neighbors to Connect</h1>
-            <img src={Image} alt="about" className="md:hidden max-w-[300px] h-auto drop-shadow-lg" />
+            <LazyLoadImage src={Image} effect='blur' placeholderSrc={Image} alt="about" className="md:hidden max-w-[300px] h-auto drop-shadow-lg" />
             <p className='text-hitam dark:text-white font-semibold'>Neighborhood norms have evolved away from spontaneous connections.</p>
             <p className='text-hitam dark:text-white font-semibold'>
               Today we prefer to screen our contacts online before meeting in person. We screen work colleagues using LinkedIn; we screen activity participants on Facebook; we screen romance candidates using online
