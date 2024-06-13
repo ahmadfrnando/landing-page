@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div id="info" className="bg-white dark:bg-gray-900">
       <div className="container flex flex-col gap-10 items-center py-32">
-        <div className="md:flex block gap-10 px-36">
+        <div className="md:flex block gap-10 md:px-36">
           <img src={Image} alt="about" className="max-w-[370px] drop-shadow-2xl" />
           <div className="flex flex-col gap-6 font-semibold text-justify md:text-center text-xl items-center justify-center ">
             <h1 className="text-4xl md:mt-0 mt-10 font-bold text-secondary/80">A Way For Neighbors to Connect</h1>
