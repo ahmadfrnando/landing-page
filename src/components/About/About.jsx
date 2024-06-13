@@ -9,7 +9,7 @@ const About = () => {
     <div id="info" className="bg-white dark:bg-gray-900 max-w-screen">
       <div className="container flex flex-col gap-10 items-center py-32">
         <div className="flex md:flex-row flex-col gap-10 md:px-20 items-center justify-center">
-          <LazyLoadImage src={Image} alt="about" effect='blur' className="md:flex hidden max-w-[300px] h-auto drop-shadow-lg" />
+          <LazyLoadImage src={Image} alt="about" effect='blur' className="md:flex hidden max-w-[300px] h-auto drop-shadow-lg rounded-[30px]" />
           <div className="flex flex-col gap-10 md:px-0 px-6 md:gap-6 font-semibold text-justify md:text-center text-xl items-center justify-center ">
             <h1 className="text-3xl md:text-4xl text-center md:mt-0 font-bold text-tertiary/80">A Way For Neighbors to Connect</h1>
             <LazyLoadImage src={Image} effect="blur" alt="about" className="md:hidden max-w-[300px] h-auto drop-shadow-lg" />

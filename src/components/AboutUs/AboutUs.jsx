@@ -1,6 +1,8 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 import AboutImages from '../../assets/aboutus.svg'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const AboutUs = () => {
   return (
@@ -8,7 +10,7 @@ const AboutUs = () => {
       <div className="container py-20 md:px-0 px-8">
         <h1 className="text-center font-bold md:text-4xl text-3xl text-tertiary">About Us</h1>
         <div className='flex flex-col gap-10 items-center justify-center text-justify md:text-center'>
-            <img src={AboutImages} alt="About"  className='w-[700px]'/>
+            <LazyLoadImage src={AboutImages} alt="About" effect='blur' className='w-[700px]'/>
           <p className='md:px-52 font-semibold text-hitam dark:text-white'>
             NeighborGood is on a mission to provide the simplest platform for neighborhoods to form connections & community. We are going after this by creating an Al agent that acts as the highly-social extrovert
             neighbor who finds symbiotic activities for people to do together.

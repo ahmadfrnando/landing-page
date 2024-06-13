@@ -29,19 +29,23 @@ const services = [
 ]
 
 const Services = () => {
+    const [open, setOpen] = React.useState(null);
+    const handleIconClick = (index) => {
+        setOpen(open === index ? null : index)
+    }
   return (
     <div id='services' className="bg-white dark:bg-gray-900 max-w-screen">
-      <div className="container flex flex-col md:py-6">
+      <div className="container flex flex-col md:py-6 md:h-[450px]">
         <h1 className="text-center font-bold text-3xl md:text-4xl text-tertiary capitalize dark:text-white">Our Services</h1>
-        <div className="grid grid-cols-1 md:grid-cols-4 mt-10 md:px-0 px-6 items-center gap-10 md:gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-4 mt-10 md:px-0 px-6 gap-10 md:gap-4">
             {services.map((service, index) => (
-                <div key={index} className="flex flex-col gap-6 items-center px-8 py-16 md:h-[500px] bg-gradient-to-b from-primary to-secondary dark:bg-gradient-to-b dark:from-gray-900 dark:to-gray-800">
-                    <div className="rounded-full cursor-pointer bg-secondary p-2 hover:bg-white">
+                <div key={index} className="flex flex-col gap-6 items-center px-8 py-16 rounded-[50px] bg-white dark:bg-gradient-to-b dark:from-gray-900 dark:to-gray-800">
+                    <button onClick={() => handleIconClick(index)} className="rounded-full transition-all duration-300 cursor-pointer bg-secondary p-2 hover:bg-white">
                         {service.icon}
-                    </div>
+                    </button>
                     <div className='flex text-hitam flex-col items-center gap-2'>
-                        <h2 className='text-xl text-center font-bold capitalize text-tertiary dark:text-white'>{service.title}</h2>
-                        <span className='text-center text-sm font-semibold dark:text-white'>{service.desc}</span>
+                        <h2 className='text-xl text-center font-bold capitalize text-hitam dark:text-white'>{service.title}</h2>
+                        {open === index &&<span className='text-center text-sm font-semibold dark:text-white'>{service.desc}</span>}
                     </div>
                 </div>
             ))}
