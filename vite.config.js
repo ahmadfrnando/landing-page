@@ -5,4 +5,8 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base: '/landing-page/',
+<<<<<<< HEAD
 })
+=======
+})
+>>>>>>> 5d880f631129ecdebb9d60bf72eea5d9bb770c7f
