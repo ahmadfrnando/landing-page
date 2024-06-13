@@ -10,6 +10,8 @@ export default {
       colors: {
         primary: '#fcd414',
         secondary: '#ec5424',
+        tertiary: '#219C90',
+        hitam: '#0C1844',
       },
       container: {
         center: true,

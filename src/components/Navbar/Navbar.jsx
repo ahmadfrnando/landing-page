@@ -3,26 +3,38 @@ import React from 'react';
 import DarkMode from './DarkModa';
 import ToogleBar from './ToogleBar';
 
+const Items = [
+  {
+    title: "Services",
+    link: "#services",
+  },
+  {
+    title: "Info",
+    link: "#info",
+  },
+  {
+    title: "About Us",
+    link: "#about",
+  },
+  {
+    title: "Postcards",
+    link: "#postcards",
+  },
+]
+
 const Navbar = () => {
   return (
-    <div className="bg-white dark:bg-gray-900">
-      <div className="container fixed top-0 backdrop-blur-lg z-10 flex h-20 justify-between items-center">
+    <div className="bg-white h-auto max-w-screen dark:bg-gray-900">
+      <div className="container bg-white dark:bg-gray-900 z-10 flex h-20 justify-between items-center">
         <a href="#">
           <img src="./logo.png" alt="logo" className='md:w-52 w-40' />
         </a>
         <div className="hidden md:flex font-bold h-full items-center justify-center">
-          <a href="#services" className="flex text-dark px-5 h-full items-center justify-center hover:bg-secondary/80 transition-all duration-150 dark:text-white dark:hover:text-secondary/80">
-            Services
+          {Items.map((item, index) => (
+          <a key={index} href={item.link} className="flex text-dark px-5 h-full items-center text-hitam justify-center hover:bg-secondary/80 transition-all duration-150 dark:text-white dark:hover:text-secondary/80 dark:hover:text-white">
+            {item.title}
           </a>
-          <a href="#info" className="flex text-dark px-5 h-full items-center justify-center hover:bg-secondary/80 transition-all duration-150 dark:text-white dark:hover:text-secondary/80">
-            Info
-          </a>
-          <a href="#about" className="flex text-dark px-5 h-full items-center justify-center hover:bg-secondary/80 transition-all duration-150 dark:text-white dark:hover:text-secondary/80">
-            About Us
-          </a>
-          <a href="#postcards" className="flex text-dark px-5 h-full items-center justify-center hover:bg-secondary/80 transition-all duration-150 dark:text-white dark:hover:text-secondary/80">
-            Postcards
-          </a>
+          ))}
         </div>
         <div className='flex justify-center items-center gap-4'>
           <DarkMode />

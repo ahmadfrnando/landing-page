@@ -1,22 +1,34 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 
+const Items = [
+  {
+    title: "Services",
+    link: "#services",
+  },
+  {
+    title: "Info",
+    link: "#info",
+  },
+  {
+    title: "About Us",
+    link: "#about",
+  },
+  {
+    title: "Postcards",
+    link: "#postcards",
+  },
+]
+
 const ResponsiveNav = () => {
   return (
-    <div className="absolute top-20 right-0 w-screen bg-white dark:bg-gray-900 border-4 border-secondary rounded-lg z-10">
-      <ul className="w-full flex flex-col font-semibold">
-        <li className="">
-          <a href="#services" className='w-full flex px-5 py-6 focus:bg-secondary'>Services</a>
-        </li>
-        <li className="">
-          <a href="#info" className='w-full flex px-5 py-6 focus:bg-secondary'>Info</a>
-        </li>
-        <li className="">
-          <a href="#about" className='w-full flex px-5 py-6 focus:bg-secondary'>About Us</a>
-        </li>
-        <li className="">
-          <a href="#postcards" className='w-full flex px-5 py-6 focus:bg-secondary'>Postcards</a>
-        </li>
+    <div className="absolute top-20 right-0 w-screen bg-white dark:bg-gray-900 z-10">
+      <ul className="w-full flex flex-col font-semibold items-center">
+        {Items.map((item, index) => (
+          <li key={index} className="">
+            <a href={item.link} className="w-full flex px-5 py-6 focus:bg-secondary dark:text-white text-hitam">{item.title}</a>
+          </li>
+        ))}        
       </ul>
     </div>
   );
