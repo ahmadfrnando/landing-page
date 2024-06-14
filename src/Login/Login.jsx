@@ -51,7 +51,7 @@ const Login = () => {
                   </button>
                   <input type={!show ? `text` : `password`} name="password" id="password" className="bg-gray-50 border border-secondary px-6 py-2 focus:border-secondary rounded-3xl " />
                 </div>
-                <button className="tracking-widest text-sm bg-secondary uppercase text-white px-6 py-3 rounded-3xl hover:ring-offset-2 hover:ring-2 hover:ring-tertiary">login</button>
+                <button onClick={() => alert("Authnticated not yet")} className="tracking-widest text-sm bg-secondary uppercase text-white px-6 py-3 rounded-3xl hover:ring-offset-2 hover:ring-2 hover:ring-tertiary">login</button>
                 <button onClick={() => btnLogin()} className="tracking-widest text-sm bg-secondary uppercase text-white px-6 py-3 rounded-3xl hover:ring-offset-2 hover:ring-2 hover:ring-tertiary">
                   register
                 </button>
@@ -99,7 +99,7 @@ const Login = () => {
                   </button>
                   <input type={showRepas ? `text` : `password`} name="repassword" id="repassword" className="bg-gray-50 border border-secondary px-6 py-2 focus:border-secondary rounded-3xl " />
                 </div>
-                <button  className="tracking-widest text-sm bg-secondary uppercase text-white px-6 py-3 rounded-3xl hover:ring-offset-2 hover:ring-2 hover:ring-tertiary">
+                <button  onClick={() => alert("Authnticated not yet")} className="tracking-widest text-sm bg-secondary uppercase text-white px-6 py-3 rounded-3xl hover:ring-offset-2 hover:ring-2 hover:ring-tertiary">
                   register
                 </button>
                 <button onClick={() => btnLogin()} className="tracking-widest text-sm bg-secondary uppercase text-white px-6 py-3 rounded-3xl hover:ring-offset-2 hover:ring-2 hover:ring-tertiary">login</button>
