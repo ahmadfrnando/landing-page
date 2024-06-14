@@ -8,10 +8,10 @@ const AboutUs = () => {
   return (
     <div id="about" className="bg-white dark:bg-gray-900">
       <div className="container py-20 md:px-0 px-8">
-        <h1 className="text-center font-bold md:text-4xl text-3xl text-tertiary">About Us</h1>
-        <div className='flex flex-col gap-10 items-center justify-center text-justify md:text-center'>
-            <LazyLoadImage src={AboutImages} alt="About" effect='blur' className='w-[700px]'/>
-          <p className='md:px-52 font-semibold text-hitam dark:text-white'>
+        <h1 data-aos="zoom-in" data-aos-duration="2000" className="text-center font-bold md:text-4xl text-3xl text-tertiary">About Us</h1>
+        <div data-aos="fade-out" data-aos-duration="2000" className='flex flex-col gap-10 items-center justify-center text-justify md:text-center'>
+            <LazyLoadImage src={AboutImages} data-aos="fade-out" data-aos-duration="2000" alt="About" effect='blur' className='w-[700px]'/>
+          <p data-aos="fade-out" data-aos-duration="2000" className='md:px-52 font-semibold text-hitam dark:text-white'>
             NeighborGood is on a mission to provide the simplest platform for neighborhoods to form connections & community. We are going after this by creating an Al agent that acts as the highly-social extrovert
             neighbor who finds symbiotic activities for people to do together.
             <br />
