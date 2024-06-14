@@ -3,6 +3,7 @@ import React from 'react';
 import IllHero from '../../assets/hero.png';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
@@ -17,10 +18,12 @@ const Hero = () => {
           <div className="md:hidden flex justify-center">
             <LazyLoadImage src={IllHero} effect="blur" alt="hero" />
           </div>
-          <a href="/landing-page/login"><button className="tracking-widest text-sm bg-secondary uppercase text-white px-6 py-3 rounded-3xl hover:ring-offset-2 hover:ring-2 hover:ring-tertiary">Get Started</button></a>
+          <Link to="/landing-page/login">
+            <button className="tracking-widest text-sm bg-secondary uppercase text-white px-6 py-3 rounded-3xl hover:ring-offset-2 hover:ring-2 hover:ring-tertiary">Get Started</button>
+          </Link>
         </div>
         <div className="hidden md:flex justify-center">
-          <LazyLoadImage src={IllHero} effect="blur" alt="hero"  className='max-w-2xl' />
+          <LazyLoadImage src={IllHero} effect="blur" alt="hero" className="max-w-2xl" />
         </div>
       </div>
     </div>

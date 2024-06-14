@@ -1,6 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
 import Logo from '../../assets/logo.png'
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -20,7 +21,7 @@ const Footer = () => {
                     <a href="#about" className="hover:underline me-4 md:me-6">About</a>
                 </li>
                 <li>
-                    <a href="/landing-page/login" className="hover:underline me-4 md:me-6">Dashboard</a>
+                    <Link to="/landing-page/login" className="hover:underline me-4 md:me-6">Dashboard</Link>
                 </li>
                 <li>
                     <a href="#info" className="hover:underline me-4 md:me-6">Info</a>
